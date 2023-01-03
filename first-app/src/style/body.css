@@ -1,0 +1,46 @@
+main {
+  margin-top: 100px;
+}
+
+main .container {
+  display: flex;
+  /* position: relative; */
+  justify-content: space-between;
+}
+
+.leftSide {
+  width: 15%;
+  height: 500px;
+  background-color: grey;
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
+
+.rightSide {
+  width: 80%;
+}
+.rightSide-header {
+  border-bottom: 1px black solid;
+}
+
+.rightSide-header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.rightSide-header-top h1 {
+  font-size: 25px;
+  text-align: start;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
+  margin: 0;
+}
+.rightSide-header-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.rightSideMain {
+  display: flex;
+  justify-content: space-between;
+}

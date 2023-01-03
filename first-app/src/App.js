@@ -1,22 +1,21 @@
-import logo from "./logo.svg";
+import logo from "./immortal.ico";
 import "./App.css";
 import { useState } from "react";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import Body from "./component/Body";
 
 function App() {
-  let name = "Immortal Jamie";
-  let name1 = "Legend Andy";
-  let temp;
-  setInterval((temp) => {
-    while (true) {
-      temp = "Immortal Jamie";
-      if (temp == "Immortal Jamie") {
-        temp = name1;
-      } else if (temp == "Legend Andy") {
-        temp = name;
-      }
-    }
-    return console.log(temp);
-  }, 1000);
+  const name = "Immortal Jamie";
+  // const [name, setName] = useState("Immortal Jamie");
+  // let myInterval = setInterval(() => {
+  //   if (name == "Immortal Jamie") {
+  //     setName("Legend Andy");
+  //   } else if (name == "Legend Andy") {
+  //     setName("Immortal Jamie");
+  //   }
+  //   return console.log(name);
+  // }, 1000);
 
   const customStyle = {
     color: name.split(" ")[0] === "Immortal" ? "red" : "green",
@@ -25,10 +24,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 style={customStyle}>Hello {temp}</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
