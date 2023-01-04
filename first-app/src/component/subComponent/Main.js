@@ -1,5 +1,5 @@
-import "../style/main.css";
-import "../style/global.css";
+import "../../style/subStyle/main.css";
+import "../../style/global.css";
 
 export default function Main() {
   return (

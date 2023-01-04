@@ -1,4 +1,4 @@
-import "../style/aside.css";
+import "../../style/subStyle/aside.css";
 
 export default function Aside() {
   return (

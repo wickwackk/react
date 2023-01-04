@@ -22,8 +22,8 @@ export default function Header() {
           </li>
         </ul>
         <input type="search" placeholder="Search" ariaLabel="Search" />
-        <button>Log in</button>
-        <button>Sign up</button>
+        <button className="mainButton">Log in</button>
+        <button className="mainButton">Sign up</button>
       </div>
     </div>
   );

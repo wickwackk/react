@@ -1,21 +1,15 @@
 import "../style/body.css";
 import "../style/global.css";
-import LikeButton from "./LikeButton";
-import Aside from "./Aside";
-import Main from "./Main";
+import LikeButton from "./subComponent/LikeButton";
+import Aside from "./subComponent/Aside";
+import Main from "./subComponent/Main";
+import LeftSide from "./subComponent/LeftSide";
 
 export default function Body() {
   return (
     <main>
       <div className="container">
-        <div className="leftSide">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores
-          expedita ex cumque ad deleniti nihil voluptas rem molestiae qui, et
-          consequuntur nam veritatis officiis quia facilis, totam, repellat
-          vitae quaerat voluptatibus placeat est! Sit, dicta libero quisquam
-          maxime doloribus amet beatae et repudiandae, quibusdam delectus, natus
-          similique ducimus iure.
-        </div>
+        <LeftSide />
         <div className="rightSide">
           <div className="rightSide-header">
             <div className="rightSide-header-top">
@@ -23,7 +17,7 @@ export default function Body() {
                 Can you force a React component to rerender without calling
                 setState?
               </h1>
-              <button>Ask Question</button>
+              <button className="mainButton">Ask Question</button>
             </div>
             <div className="rightSide-header-bottom">
               <p>Asked 7 years 7 months</p>

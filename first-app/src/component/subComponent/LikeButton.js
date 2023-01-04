@@ -1,4 +1,4 @@
-import "../style/likeButton.css";
+import "../../style/subStyle/likeButton.css";
 
 export default function LikeButton() {
   return (
